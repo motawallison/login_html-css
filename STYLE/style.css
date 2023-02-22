@@ -1,0 +1,113 @@
+* {box-sizing: border-box;}
+
+body{
+    height: 100%;
+}
+
+a, button{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #696868;
+}
+
+.login-form > #text {
+    color: #ffffff;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@keyframes pan {
+    100%{
+        background-position: 15% 50%;
+    }
+}
+
+body{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("../IMG/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100;
+    animation: 
+        pan 29s infinite alternate linear;
+}
+
+@media (
+    width >= 500px
+){
+    body{
+        padding: 0;
+    }
+}
+
+.login-card{
+    width: 100%;
+    padding: 70px 30px 44px;
+    border-radius: 24px;
+    background: #000000;
+    text-align: center;
+    opacity: 77%;
+}
+
+@media (width >= 500px){
+    .login-card{
+        margin: 0;
+        width: 400px;
+    }
+}
+
+.login-card > h2 {
+    margin: 0 0 12px;
+    font-size: 36px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.login-card > h3{
+    margin: 0 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.login-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.login-form > input,.login-form > button {
+    width: 100%;
+    height: 3em;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+
+.login-form> input {
+    background-color: rgba(84, 83, 83, 0.557);
+    border: 2px solid #363333 ;
+}
+
+.login-form > button {
+    width: 100%;
+    height: 56px;
+    border: 0;
+    background: #979696;
+    color: #ffffff ;    
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.login-form > button:hover, .login-form > input:hover {
+    background: #ffffff;
+    color: #000000 ;
+}
